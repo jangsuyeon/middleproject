@@ -1,0 +1,25 @@
+.bg-nav {
+    background-color: var(--main-color-basicBrown);
+}
+
+.point_line {
+    position: relative;
+}
+
+.point_line:before {
+    position: absolute;
+    left: -2px;
+    top: 26px;
+    width: calc(100% + 4px);
+    height: 24px;
+    background: var(--blue);
+    content: "";
+    z-index: 0;
+    animation: pointLine both ease-in infinite 3s;
+}
+
+@keyframes pointLine {
+	0% {width:0;}
+	12% {width:calc(100% + 4px);}
+	100% {width:calc(100% + 4px);}
+}

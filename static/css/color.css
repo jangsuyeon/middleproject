@@ -1,0 +1,40 @@
+/* Color Theme Swatches in RGBA */
+/* --main-color-lightBrown: color: rgba(191, 107, 59, 1); 
+--main-color-basicBrown: color: rgba(165, 84, 54, 1); 
+--main-color-darkBrown: color: rgba(140, 73, 58, 1); 
+--main-color-lightGray: color: rgba(242, 242, 242, 1); 
+--main-color-gray: color: rgba(216, 216, 216, 1);  */
+
+/* Color Theme Swatches in HSLA */
+/* --main-color-lightBrown: color: hsla(22, 52, 49, 1);
+--main-color-basicBrown: color: hsla(16, 50, 43, 1);
+--main-color-darkBrown: color: hsla(11, 40, 39, 1);
+--main-color-lightGray: color: hsla(0, 0, 95, 1);
+--main-color-gray: color: hsla(0, 0, 85, 1); */
+
+:root{
+    /* 메인색상 */
+    /* main: #0d6efd */
+    /* main : 835c3b; */
+    /* main: #f97f00 */
+    /* #127312
+    #0d6efd */
+    --main-color-lightBrown: #BF6C3B;
+    --main-color-basicBrown: #127312;
+    --main-color-darkBrown: #f3b8ab70;
+    --main-color-lightGray: #F2F2F2;
+    --main-color-gray: #D9D9D9;
+
+    /* 폰트컬러 */
+    --font-color-primary: #333333;
+    
+    /* 기본색 */
+    --black: #000000;
+    --white: #FFFFFF;
+
+    /* 그외 다른 색상 */
+    --red: #ff0000;
+    --green: #00ff00;
+    --blue: #c9c9f8;
+}
+
