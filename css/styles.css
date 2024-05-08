@@ -1839,7 +1839,7 @@ a:hover.back-to-top {
 	/* Features */
 	.tabs .nav-tabs {
 		display: flex;
-		justify-content: center;
+		/* justify-content: center; */
 		margin-bottom: 2.75rem;
 	} 
 

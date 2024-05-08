@@ -1,25 +1,185 @@
-.bg-nav {
-    background-color: var(--main-color-basicBrown);
-}
-
-.point_line {
+/* checkbox custom start */
+.check-container {
+    display: block;
     position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.point_line:before {
+.check-container input[type=checkbox] {
+    display: none;
+}
+
+.checkmark {
     position: absolute;
-    left: -2px;
-    top: 26px;
-    width: calc(100% + 4px);
-    height: 24px;
-    background: var(--blue);
-    content: "";
-    z-index: 0;
-    animation: pointLine both ease-in infinite 3s;
+    top: 50%;
+    left: 10px;
+    height: 15px;
+    width: 15px;
+    background-color: #ccc;
+    transform: translate(-50%, -50%);
 }
 
-@keyframes pointLine {
-	0% {width:0;}
-	12% {width:calc(100% + 4px);}
-	100% {width:calc(100% + 4px);}
+.check-container input[type=checkbox]:checked~.checkmark {
+    background-color: #127312;
+    ;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check-container input[type=checkbox]:checked~.checkmark:after {
+    display: block;
+}
+
+.check-container .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 7px;
+    height: 10px;
+    border: solid white;
+    border-width: 0px 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* checkbox custom end */
+
+/* pagination start */
+.pagination {
+    margin: 30px auto;
+}
+.paging {
+    display: flex;
+    justify-content: center;
+}
+.pagination ul li {
+    display: inline-block;
+    width: 30px;
+    /* padding: 0 5px; */
+    height: 30px;
+}
+
+.pagination ul li a {
+    display: inline-block;
+    /* padding: 10px; */
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.pagination ul li a:hover {
+    color: var(--main-color-basic);
+    text-decoration-color: var(--main-color-basic);
+}
+.pagination ul li.active a {
+    background-color: var(--main-color-basic);
+    color: var(--white);
+}
+/* pagination end */
+
+/* login start */
+.user-find {
+    width: calc(100% - 20px) / 2 !important;
+    margin-right: 20px;
+}
+
+.user-find:last-of-type {
+    margin-right: 0;
+}
+/* login end */
+
+/* submenu start */
+.header-dropdown {
+    box-shadow: #454343e6 2px 4px 12px;
+}
+/* submenu end */
+
+.bg-nav {
+    background-color: var(--main-color-basic);
+}
+
+.page-title {
+    margin: 60px auto
+}
+
+.page-title p {
+    border-bottom: 2px solid var(--default-color-primary);
+    font-size: 2em;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+.book-list-category {
+    padding-left: 0;
+}
+
+.book-list-category li {
+    line-height: 1em;
+}
+
+.book-list-category li a {
+    font-size: 12px;
+}
+
+.book-list-content {
+    border-left: 1px solid var(--default-color-primary);
+}
+
+.write-content {
+    margin: 50px auto;
+}
+
+.write-content input {
+    width: 100%;
+    border: none;
+}
+
+.write-content textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+}
+
+.table-write table {
+    border: 1px solid var(--default-color-primary);
+}
+
+.table-write table tr {
+    border-bottom: 1px solid var(--default-color-primary);
+}
+
+.table-write table tr th,
+.table-write table tr td {
+    border-right: 1px solid var(--default-color-primary);
+    padding: 5px;
+}
+
+.board-list table thead tr {
+    border-bottom: 1px solid var(--default-color-primary);
+    border-top: 1px solid var(--default-color-primary);
+}
+
+.board-list table tbody tr {
+    border-bottom: 1px solid var(--light-gray-color);
+}
+
+.board-list table tbody tr td {
+    text-align: center;
+    padding: 5px;
+}
+
+.board-list table tbody tr td:nth-of-type(2) {
+    text-align: left;
 }

@@ -1,0 +1,16 @@
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr th {
+    text-align: center;
+}
